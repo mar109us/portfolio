@@ -25,48 +25,42 @@ html {
 	height: 100%;
 	width: 100%;
 
-	scrollbar-width:none;
+	scrollbar-width: none;
 }
 
 body {
-
-/* 	flex-wrap: wrap; */
-
 	height: 100%;
 	width: 100%;
 
 	padding: 0px;
 	margin: 0px;
 
-	background-color: #1d2021;
+	background-color: var(--white);
 }
 
 .flex {
 	display: flex;
 
-	height: 10%;
+	height: 2%;
 }
 
-.border {
-	border: calc(1vh + 1vw) solid #1d2021;
-}
 
 .white {
-	background-color: #ebdbb2;
+	background-color: var(--white);
 }
 
 .black {
-	background-color: #1d2021;
+	background-color: var(--black);
 }
 
 .blue {
-	background-color: #458588;
+	background-color: var(--darkBlue);
 }
 
 .red {
-	background-color: #cc241d;
+	background-color: var(--darkRed);
 }
 
 .yellow {
-	background-color: #fabd2f;
+	background-color: var(--darkYellow);
 }
