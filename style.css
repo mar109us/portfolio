@@ -50,6 +50,72 @@
 	background-color: white;
 }
 
+.button-8:hover {
+	background-color: white;
+}
+
+body:has(.button-8:hover) .button-8 {
+	background-color: white;
+}
+
+.button-9:hover {
+	background-color: white;
+}
+
+.button-10:hover {
+	background-color: white;
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10 {
+	animation: sweep 5s ease-in-out;
+}
+
+@keyframes sweep {
+	0% {
+		transform: translate(-1900px, -1900px) scale(10) rotate(0deg);
+		opacity: 0;
+	}
+	20% {
+		transform: translate(0px, 0px) scale(4) rotate(-90deg);
+		opacity: 1;
+	}
+/* 	44% {
+		transform: translate(0px, 0px) scale(40) rotate(-90deg);
+		opacity: 1;
+	} */
+	45% {
+		transform: translate(1000px, 0px) scale(30) rotate(-90deg);
+	}
+
+	60% {
+		transform: translate(-1000px, 0px) scale(40) rotate(-90deg);
+	}
+	70% {
+	}
+
+/* 	75% {
+		transform: rotate(45deg) scale(1.5);
+	} */
+	80% {
+		transform: translate(15px, 0px) scale(0.5) rotate(-100deg);
+	}
+	90% {
+		transform: translate(0px, 0px) scale(1.5) rotate(380deg);
+	}
+	100% {
+		transform: translate(0px, 0px) scale(1.01) rotate(360deg);
+	}
+}
+
 html {
 	height: 100%;
 	width: 100%;
