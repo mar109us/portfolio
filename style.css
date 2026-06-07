@@ -5,7 +5,6 @@
 	--darkYellow: rgba(215, 154, 33, 0.85);
 	--white: rgb(235, 219, 178);
 
-
 	--darkGray: #928374;
 	--lightGray: #a89984;
 	--darkPurple: #b16286;
@@ -21,6 +20,10 @@
 
 * {
 	box-sizing: border-box;
+}
+
+.button-1:hover {
+	background-color: white;
 }
 
 html {
@@ -43,7 +46,6 @@ body {
 .flex {
 	display: flex;
 }
-
 
 .white {
 	background-color: var(--white);
