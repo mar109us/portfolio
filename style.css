@@ -24,68 +24,110 @@
 
 p {
 	margin: 50px;
+	opacity: 0;
 }
 
 /*  ROW 1 */
 
 .button-1:hover {
-	background-color: rgba(69, 133, 136, 0.5);
+	background-color: rgba(69, 133, 136, 0.6);
 }
 
 .button-2:hover {
-	background-color: rgba(204, 35, 29, 0.5);
+	background-color: rgba(204, 35, 29, 0.6);
 }
 
 .button-3:hover {
-	background-color: rgba(215, 154, 33, 0.5);
+	background-color: rgba(215, 154, 33, 0.6);
 }
 
 .button-4:hover {
-	background-color: rgba(204, 35, 29, 0.5);
+	background-color: rgba(204, 35, 29, 0.6);
 }
 
 /*  ROW 2 */
 
 .button-5:hover {
-	background-color: rgba(215, 154, 33, 0.5);
+	background-color: rgba(215, 154, 33, 0.6);
 }
 
 .button-6:hover {
-	background-color: rgba(69, 133, 136, 0.5);
+	background-color: rgba(69, 133, 136, 0.6);
 }
 
 body:has(.button-6:hover) .button-6 {
-	background-color: rgba(69, 133, 136, 0.5);
+	background-color: rgba(69, 133, 136, 0.6);
 }
 
 .button-7:hover {
-	background-color: rgba(69, 133, 136, 0.5);
+	background-color: rgba(69, 133, 136, 0.6);
 }
 
 .button-8:hover {
-	background-color: rgba(215, 154, 33, 0.5);
+	background-color: rgba(215, 154, 33, 0.6);
 }
 
 /*  ROW 3 */
 
 .button-9:hover {
-	background-color: rgba(69, 133, 136, 0.5);
+	background-color: rgba(69, 133, 136, 0.6);
 }
 
 .button-10:hover {
-	background-color: rgba(204, 35, 29, 0.5);
+	background-color: rgba(204, 35, 29, 0.6);
 }
 
 .button-11:hover {
-	background-color: rgba(204, 35, 29, 0.5);
+	background-color: rgba(204, 35, 29, 0.6);
 }
 
-@keyframes hover {
-	1% {
-	}
-	100% {
+/* timing for transition to default */
+
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10,
+.button-11 {
+	transition: 5s;
+	transition-timing-function: ease;
+
+	p {
+		transition: 3s;
+		transition-timing-function: ease;
+		opacity: 0;
 	}
 }
+
+/* timing for transition to hover */
+
+.button-1:hover,
+.button-2:hover,
+.button-3:hover,
+.button-4:hover,
+.button-5:hover,
+.button-6:hover,
+body:has(.button-6:hover) .button-6,
+.button-7:hover,
+.button-8:hover,
+.button-9:hover,
+.button-10:hover,
+.button-11:hover {
+	transition: 1s;
+	transition-timing-function: ease;
+	p {
+		transition: 1s;
+		transition-timing-function: ease;
+		opacity: 1;
+	}
+}
+
+/* site startup animation */
 
 .button-1,
 .button-2,
@@ -99,6 +141,7 @@ body:has(.button-6:hover) .button-6 {
 .button-10,
 .button-11 {
 	animation: sweep 5s ease-in-out;
+	animation-iteration-count: 1;
 }
 
 @keyframes sweep {
