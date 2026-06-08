@@ -22,48 +22,69 @@
 	box-sizing: border-box;
 }
 
+p {
+	margin: 50px;
+}
+
+/*  ROW 1 */
+
 .button-1:hover {
-	background-color: white;
+	background-color: rgba(69, 133, 136, 0.5);
 }
 
 .button-2:hover {
-	background-color: white;
+	background-color: rgba(204, 35, 29, 0.5);
 }
 
 .button-3:hover {
-	background-color: white;
+	background-color: rgba(215, 154, 33, 0.5);
 }
 
 .button-4:hover {
-	background-color: white;
+	background-color: rgba(204, 35, 29, 0.5);
 }
 
+/*  ROW 2 */
+
 .button-5:hover {
-	background-color: white;
+	background-color: rgba(215, 154, 33, 0.5);
 }
 
 .button-6:hover {
-	background-color: white;
+	background-color: rgba(69, 133, 136, 0.5);
+}
+
+body:has(.button-6:hover) .button-6 {
+	background-color: rgba(69, 133, 136, 0.5);
 }
 
 .button-7:hover {
-	background-color: white;
+	background-color: rgba(69, 133, 136, 0.5);
 }
 
 .button-8:hover {
-	background-color: white;
+	background-color: rgba(215, 154, 33, 0.5);
 }
 
-body:has(.button-8:hover) .button-8 {
-	background-color: white;
-}
+/*  ROW 3 */
 
 .button-9:hover {
-	background-color: white;
+	background-color: rgba(69, 133, 136, 0.5);
 }
 
 .button-10:hover {
-	background-color: white;
+	background-color: rgba(204, 35, 29, 0.5);
+}
+
+.button-11:hover {
+	background-color: rgba(204, 35, 29, 0.5);
+}
+
+@keyframes hover {
+	1% {
+	}
+	100% {
+	}
 }
 
 .button-1,
@@ -75,7 +96,8 @@ body:has(.button-8:hover) .button-8 {
 .button-7,
 .button-8,
 .button-9,
-.button-10 {
+.button-10,
+.button-11 {
 	animation: sweep 5s ease-in-out;
 }
 
