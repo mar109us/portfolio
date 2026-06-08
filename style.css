@@ -22,9 +22,32 @@
 	box-sizing: border-box;
 }
 
+html {
+	height: 100%;
+	width: 100%;
+
+	scrollbar-width: none;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+
+	padding: 0px;
+	margin: 0px;
+
+	background-color: var(--white);
+
+	font-size: 1em;
+}
+
+.flex {
+	display: flex;
+}
+
 p {
-	margin: 50px;
-	opacity: 0;
+	margin: 20px;
+	/* opacity: 0; */
 }
 
 /*  ROW 1 */
@@ -81,6 +104,23 @@ body:has(.button-6:hover) .button-6 {
 	background-color: rgba(204, 35, 29, 0.6);
 }
 
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5,
+.button-6,
+.button-7,
+.button-8,
+.button-9,
+.button-10,
+.button-11 {
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 /* timing for transition to default */
 
 .button-1,
@@ -94,14 +134,14 @@ body:has(.button-6:hover) .button-6 {
 .button-9,
 .button-10,
 .button-11 {
-	transition: 5s;
+	transition: 3s;
 	transition-timing-function: ease;
 
-	p {
+	/* 	p {
 		transition: 3s;
 		transition-timing-function: ease;
 		opacity: 0;
-	}
+	} */
 }
 
 /* timing for transition to hover */
@@ -118,10 +158,10 @@ body:has(.button-6:hover) .button-6,
 .button-9:hover,
 .button-10:hover,
 .button-11:hover {
-	transition: 1s;
+	transition: 0.3s;
 	transition-timing-function: ease;
 	p {
-		transition: 1s;
+		transition: 0.3s;
 		transition-timing-function: ease;
 		opacity: 1;
 	}
@@ -181,27 +221,6 @@ body:has(.button-6:hover) .button-6,
 		pointer-events: none;
 		pointer-events: all;
 	}
-}
-
-html {
-	height: 100%;
-	width: 100%;
-
-	scrollbar-width: none;
-}
-
-body {
-	height: 100%;
-	width: 100%;
-
-	padding: 0px;
-	margin: 0px;
-
-	background-color: var(--white);
-}
-
-.flex {
-	display: flex;
 }
 
 .white {
