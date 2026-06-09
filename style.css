@@ -76,8 +76,8 @@ ul {
 }
 
 h1 {
-	font-size: calc(0.7vw + 1.25vh);
-	font-weight: 900;
+	font-size: calc(0.8vw + 1.35vh);
+	font-weight: 700;
 }
 
 h2 {
@@ -167,12 +167,12 @@ body:has(.button-6:hover) .button-6 {
 	h2 {
 		transition: 1s;
 		transition-timing-function: ease;
-		opacity: 0.3;
+		opacity: 0.9;
 	}
 	h1 {
 		transition: 1s;
 		transition-timing-function: ease;
-		opacity: 0.6;
+		opacity: 1;
 	}
 }
 
@@ -201,6 +201,10 @@ body:has(.button-6:hover) .button-6,
 		transition: 0.3s;
 		transition-timing-function: ease;
 		opacity: 1;
+	}
+	h1 {
+		color: rgb(235, 219, 178);
+		text-shadow: 1px 1px 1px black;
 	}
 }
 
