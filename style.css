@@ -1,8 +1,8 @@
 :root {
 	--black: rgb(29, 32, 33);
-	--darkRed: rgba(204, 35, 29, 0.85);
-	--darkBlue: rgba(69, 133, 136, 0.85);
-	--darkYellow: rgba(215, 154, 33, 0.85);
+	--darkRed: rgba(204, 35, 29, 0.9);
+	--darkBlue: rgba(69, 133, 136, 0.9);
+	--darkYellow: rgba(215, 154, 33, 0.9);
 	--white: rgb(235, 219, 178);
 
 	--darkGray: #928374;
@@ -40,11 +40,24 @@ body {
 	margin: 0px;
 
 	background-color: var(--white);
+	/* color: rgb(29, 32, 33); */
 	color: rgb(29, 32, 33);
 }
 
 .flex {
 	display: flex;
+	/* flex: auto; */
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: auto;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
 }
 
 .button-1,
@@ -61,32 +74,61 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
 }
 
 a {
 	color: rgb(29, 32, 33);
 	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
 }
 a:hover {
 	color: rgb(235, 219, 178);
 }
+
+a:hover h2 {
+	background-color: rgb(29, 32, 33);
+}
+
 ul {
 	list-style: none;
 }
 
 h1 {
-	font-size: calc(1.1vw + 1.1vh);
+	margin-top: 0.5vh;
+	margin-bottom: 0.4em;
+
+	font-size: calc(1vw + 1vh);
 	font-weight: 700;
-	margin: 0px;
-	margin-top: 0.4em;
-	padding: 0px;
+	padding-left: 2vh;
+	padding-right: 2vh;
+
+	background-color: rgb(235, 219, 178);
+
+	border: 0.15em solid rgb(29, 32, 33);
+	text-align: center;
 }
 
 h2 {
-	font-size: calc(0.8vw + 0.8vh);
-	margin: 0px;
+	padding-left: 0.5vh;
+	padding-right: 0.5vh;
+
+	padding-top: 0.15em;
+	padding-bottom: 0.15em;
+
+	margin: 0em;
 	margin-bottom: 0.2em;
-	padding: 0px;
+
+	font-size: calc(0.7vw + 0.7vh);
+	font-weight: 400;
+
+	background-color: rgb(235, 219, 178);
+
+	border: 0.15em solid rgb(29, 32, 33);
+	text-align: center;
 }
 
 .button-3,
@@ -110,55 +152,58 @@ h2 {
 /*  ROW 1 */
 
 .button-1:hover {
-	background-color: rgba(69, 133, 136, 0.95);
+	background-color: rgb(69, 133, 136);
 }
 
 .button-2:hover {
-	background-color: rgba(204, 35, 29, 0.95);
+	background-color: rgb(204, 35, 29);
 }
 
 .button-3:hover {
-	background-color: rgba(215, 154, 33, 0.95);
+	/* background-color: rgb(215, 154, 33); */
+	background-color: rgb(29, 32, 33);
 }
 
 .button-4:hover {
-	background-color: rgba(204, 35, 29, 0.95);
+	background-color: rgb(204, 35, 29);
 }
 
 /*  ROW 2 */
 
 .button-5:hover {
-	background-color: rgba(215, 154, 33, 0.95);
+	/* background-color: rgb(215, 154, 33); */
+	background-color: rgb(29, 32, 33);
 }
 
 .button-6:hover {
-	background-color: rgba(69, 133, 136, 0.95);
+	background-color: rgb(69, 133, 136);
 }
 
 body:has(.button-6:hover) .button-6 {
-	background-color: rgba(69, 133, 136, 0.95);
+	background-color: rgb(69, 133, 136);
 }
 
 .button-7:hover {
-	background-color: rgba(69, 133, 136, 0.95);
+	background-color: rgb(69, 133, 136);
 }
 
 .button-8:hover {
-	background-color: rgba(215, 154, 33, 0.95);
+	/* background-color: rgb(215, 154, 33); */
+	background-color: rgb(29, 32, 33);
 }
 
 /*  ROW 3 */
 
 .button-9:hover {
-	background-color: rgba(69, 133, 136, 0.95);
+	background-color: rgb(69, 133, 136);
 }
 
 .button-10:hover {
-	background-color: rgba(204, 35, 29, 0.95);
+	background-color: rgb(204, 35, 29);
 }
 
 .button-11:hover {
-	background-color: rgba(204, 35, 29, 0.95);
+	background-color: rgb(204, 35, 29);
 }
 
 /* timing for transition to default */
@@ -174,18 +219,18 @@ body:has(.button-6:hover) .button-6 {
 .button-9,
 .button-10,
 .button-11 {
-	transition: 1s;
+	transition: 0.3s;
 	transition-timing-function: ease;
 	opacity: 1;
 }
 
 /* timing for transition to hover */
 
-img:hover {
+/* img:hover {
 	transition: 0.15s;
 	transition-timing-function: ease;
-	border: 0.4em solid rgb(235, 219, 178);
-}
+	border: 0.1em solid rgb(235, 219, 178);
+} */
 
 .button-1:hover,
 .button-2:hover,
@@ -202,8 +247,8 @@ body:has(.button-6:hover) .button-6,
 	transition-timing-function: ease;
 
 	h1 {
+		background-color: rgb(29, 32, 33);
 		color: rgb(235, 219, 178);
-		text-shadow: 1px 1px 1px black;
 	}
 }
 
