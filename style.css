@@ -210,6 +210,58 @@ body:has(.button-6:hover) .button-6,
 
 /* site startup animation */
 
+.black,
+.yellow,
+.blue,
+.red,
+.lines {
+	animation: fade1 8.8s ease-in-out;
+	animation-iteration-count: 1;
+}
+@keyframes fade1 {
+	0% {
+		opacity: 0;
+	}
+	52% {
+		opacity: 0;
+	}
+	65% {
+		opacity: 1;
+	}
+}
+.canvas-texture {
+	animation: fade2 8s ease-in-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes fade2 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 5%;
+	}
+}
+.cracked-texture {
+	animation: fade3 8s ease-in-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes fade3 {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 15%;
+	}
+}
+
 .button-1,
 .button-2,
 .button-3,
