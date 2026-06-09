@@ -22,7 +22,6 @@
 	box-sizing: border-box;
 
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	/* font-size: calc(1vw + 0.5vh); */
 	font-weight: 400;
 }
 
@@ -178,19 +177,6 @@ body:has(.button-6:hover) .button-6 {
 	transition: 1s;
 	transition-timing-function: ease;
 	opacity: 1;
-
-	/* 	img,
-	p,
-	h2 {
-		transition: 1s;
-		transition-timing-function: ease;
-		opacity: 0.9;
-	}
-	h1 {
-		transition: 1s;
-		transition-timing-function: ease;
-		opacity: 1;
-	} */
 }
 
 /* timing for transition to hover */
@@ -205,7 +191,6 @@ img:hover {
 .button-2:hover,
 .button-3:hover,
 .button-4:hover,
-/* .button-5:hover, */
 .button-6:hover,
 body:has(.button-6:hover) .button-6,
 .button-7:hover,
@@ -216,15 +201,6 @@ body:has(.button-6:hover) .button-6,
 	transition: 0.3s;
 	transition-timing-function: ease;
 
-	/* 	img,
-	a,
-	p,
-	h1,
-	h2 {
-		transition: 0.3s;
-		transition-timing-function: ease;
-		opacity: 1;
-	} */
 	h1 {
 		color: rgb(235, 219, 178);
 		text-shadow: 1px 1px 1px black;
