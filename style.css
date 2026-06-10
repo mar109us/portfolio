@@ -40,13 +40,11 @@ body {
 	margin: 0px;
 
 	background-color: var(--white);
-	/* color: rgb(29, 32, 33); */
 	color: rgb(29, 32, 33);
 }
 
 .flex {
 	display: flex;
-	/* flex: auto; */
 }
 
 .flex-row {
@@ -160,7 +158,6 @@ h2 {
 }
 
 .button-3:hover {
-	/* background-color: rgb(215, 154, 33); */
 	background-color: rgb(29, 32, 33);
 }
 
@@ -171,7 +168,6 @@ h2 {
 /*  ROW 2 */
 
 .button-5:hover {
-	/* background-color: rgb(215, 154, 33); */
 	background-color: rgb(29, 32, 33);
 }
 
@@ -188,7 +184,6 @@ body:has(.button-6:hover) .button-6 {
 }
 
 .button-8:hover {
-	/* background-color: rgb(215, 154, 33); */
 	background-color: rgb(29, 32, 33);
 }
 
@@ -207,7 +202,6 @@ body:has(.button-6:hover) .button-6 {
 }
 
 /* timing for transition to default */
-
 .button-1,
 .button-2,
 .button-3,
@@ -225,13 +219,6 @@ body:has(.button-6:hover) .button-6 {
 }
 
 /* timing for transition to hover */
-
-/* img:hover {
-	transition: 0.15s;
-	transition-timing-function: ease;
-	border: 0.1em solid rgb(235, 219, 178);
-} */
-
 .button-1:hover,
 .button-2:hover,
 .button-3:hover,
@@ -253,7 +240,6 @@ body:has(.button-6:hover) .button-6,
 }
 
 /* site startup animation */
-
 .black,
 .yellow,
 .blue,
@@ -292,11 +278,11 @@ img {
 		opacity: 1;
 	}
 }
+
 .canvas-texture {
 	animation: fade2 8s ease-in-out;
 	animation-iteration-count: 1;
 }
-
 @keyframes fade2 {
 	0% {
 		opacity: 0;
@@ -308,6 +294,7 @@ img {
 		opacity: 5%;
 	}
 }
+
 .cracked-texture {
 	animation: fade3 8s ease-in-out;
 	animation-iteration-count: 1;
@@ -360,8 +347,6 @@ img {
 	60% {
 		transform: translate(-1000px, 0px) scale(40) rotate(-90deg);
 		pointer-events: none;
-	}
-	70% {
 	}
 
 	80% {
